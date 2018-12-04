@@ -1,4 +1,4 @@
-# Make vote application on Docker Django with MySQL5.7 and Nginx
+# Make a voting application in Docker Django with MySQL5.7 and Nginx
 
 # spec
 <ul>
