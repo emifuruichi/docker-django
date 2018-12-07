@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+#    'bootstrap3',
 ]
 
 MIDDLEWARE = [
@@ -78,7 +79,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mysite',
-        'USER': 'mysiteuser',
+        'USER': 'root',
+#        'USER': 'mysiteuser',
         'PASSWORD': 'mysitepass',
         'HOST': 'db',
         'PORT': '3306',
@@ -128,8 +130,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/static'
 
 import pymysql
 pymysql.install_as_MySQLdb()
 
-STATIC_ROOT = '/static'
